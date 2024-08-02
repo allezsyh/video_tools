@@ -70,7 +70,6 @@ def stitcher_videos(video_paths, output_video, video_tags=None, grid_size=(2, 2)
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')
     out = cv2.VideoWriter(output_video, fourcc, fps, (width, height))
 
-    frame_num = 20 # debug
     # 播放所有视频
     for _ in tqdm(range(frame_num)):
         frames = []
